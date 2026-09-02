@@ -1,0 +1,5 @@
+s1=input("enter the string")
+s2=input("enter the string")
+n=int(input("enter the number n"))
+result = s1.join([s2[i:i+n] for i in range(0, len(s2), n)])
+print(result)
