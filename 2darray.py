@@ -1,5 +1,10 @@
-R = int(input())
-C = int(input())
-print("Enter", R*C, "values one by one:")
-mat = [[input() for _ in range(C)] for _ in range(R)]
-print(mat)
+print("The matrix is:")
+for i in range(R):
+  for j in range(C):
+    print(mat[i][j],end=" ")
+  print()
+for i in range(R):
+  for j in range(C):
+    if i==j:
+      print(mat[i][j],end=" ")    
+print()
